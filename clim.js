@@ -1,17 +1,19 @@
 let tabClim = new Array();
+let image;
+let mybutton = document.getElementById('bouton');
+mybutton = addEventListener("click", creerClim);
+console.log();
+console.log(tabClim.length);
 
-function init (){
-    let mybutton = document.getElementById('bouton');
-    mybutton = addEventListener("click", creerClim);
-    console.log();
-    //console.log(tabClim.length);
-}
 
 //créer l'objet climatisation et le lien avec la page html
 
+
+
+
 function creerClim() {
 
-    let t = parseInt(document.getElementById("temperature").value);
+    let t = parseFloat(document.getElementById("temperature").value);
     let p = parseInt(document.getElementById("pression").value);
     let h = parseInt(document.getElementById("humidite").value);
     let s = (document.getElementById("salle").value);
@@ -51,8 +53,25 @@ function creerClim() {
         document.getElementById("tabClim").appendChild(tr);
     }
     
+    
 }
 
+function changeImg (){
+    image.src ="./image/mont.jpeg";
+}
+
+function passerImg() {
+    image.src = "./image/riv.webp";
+
+}
+
+function onmousedown() {
+    document.getElementById("button").title;
+
+}
+
+document.getElementById("image").src = image.src;
+//document.getElementById("img").src = image1.src;
 //faire un constructeur 
 
 function climatisation(temperature, pression, humidite, salle, date){

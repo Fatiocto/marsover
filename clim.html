@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <link href="stylesheet" type="text/css" href="main.css">
     <title>Climatisation</title>
-    <script src="clim.js"></script>
+    
 </head>
 
-<body onload="init()">
+<body>
 
     <label>Température</label>
     <input id="temperature" type="number" value=""/>
@@ -18,20 +18,21 @@
     <input id="pression" type="number" value=""/>
     
     <label>Taux d'humidité</label>
-    <input id="humidité" type="text" value=""/>
+    <input id="humidité" type="number" value=""/>
 
     <label>Salle</label>
     <input id="salle" type="text" value=""/>
 
     <label>Date</label>
     <input id="date" type="date" value=""/>
-
-
    
-
     <input type="button" value="Créer Climatisation" id="bouton">
 
     <table id="tabClim"></table>
+
+    <img id="image" alt="photo"/>
+    <input type="button" value="Cliques" id="button">
+    <script src="clim.js"></script>
     
     
     
